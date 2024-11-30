@@ -1,0 +1,23 @@
+﻿@model IEnumerable<lab124.Models.Company>
+
+<h1>Companies</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Employee Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var company in Model)
+        {
+            <tr>
+                <td>@company.Name</td>
+                <td>@company.Address</td>
+                <td>@company.EmployeeCount</td>
+            </tr>
+        }
+    </tbody>
+</table>
